@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NOBELLINK</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="pi-sdk.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="login-screen" id="login-screen">
+      <h1>Welcome to NOBELLINK</h1>
+      <p>Connect. Collaborate. Grow.</p>
+      <button onclick="loginWithPi()">Login with Pi</button>
+    </div>
+
+    <div class="dashboard hidden" id="dashboard">
+      <h2>Hello, <span id="username"></span>!</h2>
+      <h3>Latest Posts</h3>
+      <div class="post-feed">
+        <div class="post">
+          <h4>@mariabuilds</h4>
+          <p>Just launched my new Pi-powered project. Let’s connect!</p>
+        </div>
+        <div class="post">
+          <h4>@devjordan</h4>
+          <p>Looking for a graphic designer to collab with. Drop your links!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
